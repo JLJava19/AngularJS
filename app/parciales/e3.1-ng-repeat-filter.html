@@ -1,0 +1,75 @@
+<main class="container">
+
+    <h2>Carrito de la compra</h2>
+    <div class = "row col-sm-12" ng-controller="CestaCompraController as cc">
+        <p>
+            Nombre:
+            <input type="text" ng-model="busqueda.nombre" placeholder="Filtro de busqueda nombre">
+        </p>
+        <p>
+            color:
+            <input type="text" ng-model="busqueda.color" placeholder="Filtro de busqueda color">
+        </p>
+        <div>
+        Fruta Seleccionada: {{cc.frutaSeleccionada}}
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-sm-3" ng-click="cc.ordenar('imagen')">
+                        IMAGEN
+                    </div>
+                    <div class="col-sm-5" ng-click="cc.ordenar('nombre')">
+                        <i class="fas fa-angle-down"></i>
+                        NOMBRE
+                    </div>
+                    <div class="col-sm-2" ng-click="cc.ordenar('color')">
+                        COLOR
+                    </div>
+                    <div class="col-sm-1" ng-click="cc.ordenar('precio')">
+                        <i class="fas fa-angle-up"></i> 
+                        PRECIO
+                    </div>
+                    <div class="col-sm-1" ng-click="cc.ordenar('cantidad')">
+                        CANTIDAD
+                    </div>
+                </div>
+
+            </li>
+            
+
+            <li class="{{ (cc.frutaSeleccionada == f) ? 'list-group-item active' : 'list-group-item' }}" 
+            ng-click="cc.seleccionado(fj)" 
+            ng-repeat="fj in cc.frutasJson.fruta | filter: busqueda | orderBy:columna:orden">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img ng-src="img/{{fj.imagen}}" alt="{{fj.nombre}} - {{fj.color}}">
+                    </div>
+                    <div class="col-sm-5">
+                        <div>{{fj.nombre}}</div> - {{fj.color}} - 
+                        <div class="precioFruta">{{fj.precio}}</div>
+                    </div>
+                    <div class="col-sm-2">
+                        <i class="fas fa-minus" ng-click="cc.restarCantidad(fj)"></i>
+                        <input type="text" size="3" class="form-control" value="{{ fj.cantidad }}">
+                        <i class="fas fa-plus" ng-click="cc.sumarCantidad(fj)""></i>
+                    </div>
+                    <div class="col-sm-1">
+                        <a class=""><i class="fas fa-shopping-cart" ng-click="cc.calcularPrecioTotal(fj)"></i></a>
+                    </div>
+
+                    <div class="col-sm-1">
+                        <a class=""><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+
+            </li>
+            <li class="list-group-item"><div class="precioTotal">TOTAL {{cc.precioTotalResultado | currency:"EUR"}}</div></li>
+        </ul>
+        
+    </div>
+    <!-- Div final ng-controller -->
+
+
+
+</main>

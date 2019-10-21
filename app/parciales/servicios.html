@@ -1,0 +1,72 @@
+<div ng-controller="serviciosController">
+    <h2>{{ titulo }}</h2>
+    <p>AngularJS tiene realmente 5 tipos distintos de servicios</p>
+    <ul>
+        <li>Constantes</li>
+        <li>Valores</li>
+        <li>Servicios</li>
+        <li>Factorias</li>
+        <li>Proveedores</li>
+    </ul>
+
+    <p>Los nombres de los servicios deben seguir la misma nomenclatura que los nombre de las variables. Es decir que la primera palabra debe ser en minúscula y el resto de palabras deben empezar en mayúscula <strong>(ver CamelCase)</strong></p>
+
+    <div class="card">
+        <div class="card-header">
+            <a href="https://www.cursoangularjs.es/doku.php?id=unidades:03_servicios:05_constant" target="_blank">Constantes</a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Constantes definidas en app.js <code>app.constant("serviciosConstantes", {...})</code></h5>
+            <h4 class="card-title"></h4>
+            <p class="card-text">
+
+                <code>
+                    <pre>
+                        {{ constantes | json }}
+                    </pre>
+                </code>
+            </p>
+            <a href="https://www.cursoangularjs.es/doku.php?id=unidades:03_servicios:05_constant" class="btn btn-primary">Curso AngularJS - constantes</a>
+        </div>
+    </div>
+
+    <div class="card">
+            <div class="card-header">
+                <a href="https://www.cursoangularjs.es/doku.php?id=unidades:03_servicios:07_service" target="_blank">Services</a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Hay que definir una clase</h5>
+                <h4 class="card-title"></h4>
+                <p class="card-text">
+    
+                    <code>
+                        <pre>
+                                function Rectangulo() {
+                                    this.ancho=0;
+                                    this.alto=0;
+                                   
+                                    this.setAncho=function(ancho) {
+                                      this.ancho=ancho;
+                                    }
+                                     
+                                    this.setAlto=function(alto) {
+                                      this.alto=alto;
+                                    }  
+                                     
+                                    this.getArea=function() {
+                                      return this.ancho * this.alto;
+                                    }
+                                  }
+                                   
+                                  app.service("rectangulo",Rectangulo);
+                        </pre>
+                    </code>
+                </p>
+                <p>El area de un rectangulo 2 * 2 = {{area}}</p>
+                <a href="https://www.cursoangularjs.es/doku.php?id=unidades:03_servicios:07_service" class="btn btn-primary">Curso AngularJS - Services</a>
+            </div>
+        </div>
+
+
+
+</div>

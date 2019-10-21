@@ -1,0 +1,22 @@
+<!-- componente-calificacion-->
+
+<div class="row">
+    <div class="col-sm-1">
+        {{ $ctrl.materia }}
+    </div>
+    <div class="col-sm-1">
+        <button ng-click="$ctrl.restar()"> - </button>
+    </div>
+    <div class="col-sm-2">
+        Nota: {{ $ctrl.nota }}
+    </div>
+    <div class="col-sm-3">
+        {{ $ctrl.calificacion }}
+    </div>
+    <div class="col-sm-1">
+        <button ng-click="$ctrl.sumar()"> + </button>
+    </div>
+</div>
+
+
+<!-- /componente-calificacion -->

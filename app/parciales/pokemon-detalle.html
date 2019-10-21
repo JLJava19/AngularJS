@@ -1,0 +1,29 @@
+
+<div ng-controller="PokemonDetalleController as pk">
+    <h3>Pokemon: {{ pk.pokemon.name | capitalizar }} ( id: {{ pk.pokemon.id }} ) </h3>
+
+    <br>
+
+
+    <div class="row">
+   
+        <img ng-src="{{ pk.pokemon.sprites.back_default }}" alt="">
+        <img ng-src="{{ pk.pokemon.sprites.back_female }}" alt="">
+        <img ng-src="{{ pk.pokemon.sprites.back_shiny }}" alt="">
+        <img ng-src="{{ pk.pokemon.sprites.back_shiny_female }}" alt="">
+        <img ng-src="{{ pk.pokemon.sprites.front_default }}" alt="">
+        <img ng-src="{{ pk.pokemon.sprites.front_female }}" alt="">
+        <img ng-src="{{ pk.pokemon.sprites.front_shiny }}" alt="">
+        <img ng-src="{{ pk.pokemon.sprites.front_shiny_female }}" alt="">
+
+    </div>
+
+    <div class="row">
+        Nombre: {{pk.pokemon.name}}
+
+        bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br>bla<br> bla<br>bla<br>bla<br>bla<br>bla<br>
+
+    </div>
+
+</div>
+

@@ -1,0 +1,72 @@
+<h1>{{ "Wellcome Angular JS" | uppercase}}</h1>
+        <h2>Filtros</h2>
+        <p>Usar directiva ng-non-bindable en elemento HTML para no hacer binding cuando encerramos entre doble llave</p>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-info" ng-non-bindable>{{ "Wellcome Angular JS" | uppercase}}</li>
+            <li class="list-group-item"><span class="badge badge-secondary">{{ "Wellcome Angular JS" | uppercase}}</span></li>
+            <li class="list-group-item list-group-item-info" ng-non-bindable>{{ "Wellcome Angular JS" | lowercase}}</li>
+            <li class="list-group-item">{{ "Wellcome Angular JS" | lowercase}}</li>
+            <li class="list-group-item list-group-item-danger">Currency
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-info" ng-non-bindable>{{ "1234.56" | currency }}</li>
+                    <li class="list-group-item">{{ "1234.56" | currency }}</li>
+                    <li class="list-group-item list-group-item-info" ng-non-bindable>{{ "1234.56" | currency:"USD$" }}
+                    </li>
+                    <li class="list-group-item">{{ "1234.56" | currency:"USD$" }}</li>
+                    <li class="list-group-item list-group-item-info" ng-non-bindable>{{ "1234.56" | currency:"USD$":0 }}
+                    </li>
+                    <li class="list-group-item">{{ "1234.56" | currency:"USD$":0 }}</li>
+                </ul>
+            </li>
+
+            <li class="list-group-item list-group-item-success">Date
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-info" ng-non-bindable>{{1288323623006 | date:'medium'}}
+                    </li>
+                    <li class="list-group-item">{{1288323623006 | date:'medium'}}</li>
+                    <li class="list-group-item list-group-item-info" ng-non-bindable>
+                        {{1288323623006 | date:'yyyy-MM-dd HH:mm:ss Z'}}</li>
+                    <li class="list-group-item">{{1288323623006 | date:'yyyy-MM-dd HH:mm:ss Z'}}</li>
+                    <li class="list-group-item list-group-item-info" ng-non-bindable>
+                        {{1288323623006 | date:'MM/dd/yyyy @ h:mma'}}</li>
+                    <li class="list-group-item">{{'1288323623006' | date:'MM/dd/yyyy @ h:mma'}}</li>
+                    <li class="list-group-item list-group-item-info" ng-non-bindable>
+                        {{1288323623006 | date:"MM/dd/yyyy 'at' h:mma"}}</li>
+                    <li class="list-group-item">{{'1288323623006' | date:"MM/dd/yyyy 'at' h:mma"}}</li>
+                    <li class="list-group-item list-group-item-info" ng-non-bindable>
+                        {{20191001T00:00:00 | date:"MM/dd/yyyy 'at' h:mma"}}</li>
+                    <li class="list-group-item">{{'20191001T00:00:00' | date:"MM/dd/yyyy 'at' h:mma"}}</li>
+                </ul>
+            </li>
+
+
+
+
+        </ul>
+
+        <h2>Directiva ng-model</h2>
+        Su nombre: {{ nombre | uppercase}}
+        <br>
+        <input type="text" ng-model="nombre" placeholder="Dime tu nombre" class="form-control">
+        <br>
+        Seleccione su pais: {{ pais }}
+        <select class="form-control" ng-model="pais">
+            <option value="es">España</option>
+            <option value="ba">Barakaldo</option>
+            <option value="fr">Fracia</option>
+        </select>
+        <br>
+        Tus gustos: {{ g1 }} {{ g2 }} {{ g3 }} {{ g4 }}
+        <input type="checkbox" ng-model="g1" class="form-control">Música
+        <input type="checkbox" ng-model="g2" class="form-control">Surf
+        <input type="checkbox" ng-model="g3" class="form-control">Bromas
+        <input type="checkbox" ng-model="g4" class="form-control">Caidas
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="checkbox" aria-label="Checkbox for following text input">
+              </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with checkbox">
+        </div>

@@ -1,0 +1,57 @@
+<!-- <listado-tareas>n-->
+<h2>{{titulo}}</h2>
+<hr>
+<div class="border p-2 mb-2 bg-light">
+    <input type="text" class="input-group input-group-sm mb-3" ng-model="descripcion" placeholder="Descripcion de la tarea" size="40" autofocus>
+    <button class="btn btn-primary btn-sm btn-block" ng-click="crearTarea()" >Nueva tarea</button>
+    <p class="text-danger">{{ mensajeValidacion }}</p>
+</div>
+
+<div class="border p-2 mb-2 bg-light">
+    <input type="text" class="input-group input-group-sm mb-3" ng-model="busqueda.descripcion" placeholder="Filtrar las tareas por descripcion" size="40">
+</div>
+
+
+<div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input"  ng-model="busqueda.completada" type="radio" value="false">
+        <label class="form-check-label" for="inlineRadio1">Completadas</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input"  ng-model="busqueda.completada" type="radio" value="true">
+        <label class="form-check-label" for="inlineRadio2">Incompletadas</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input"  ng-model="busqueda.completada" type="radio" value="">
+        <label class="form-check-label" for="inlineRadio2">Todos</label>
+    </div>
+</div>
+
+<p ng-show="tareas.length == 0">Cargando tareas...</p>
+
+<ul>
+    <li class="list-group-item {{ item.completada?'tachado':''}}" ng-repeat="item in tareas | filter: busqueda" >
+        <span class="badge badge-pill {{(!item.completada)? 'badge-primary': 'badge-light'}}">
+            {{item.id}}
+        </span> 
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" ng-checked="item.completada"  ng-click="completarTarea(item)">
+            <label class="form-check-label" for="inlineCheckbox1"></label>
+        </div>
+        
+        <span ng-hide="mostrar">{{item.descripcion}}</span>
+        <div ng-show="mostrar">
+            <input type="text" value="">
+        </div>
+        
+
+        <i class="far fa-check-circle" ng-show="item.completada" ></i>
+        
+        <i class="far fa-trash-alt btn-eliminar" ng-click="eliminarTarea(item)"></i>
+        <i class="far fa-edit btn-editar" ng-click="editarTarea(item)"></i>
+    </li>
+
+</ul>
+
+
+<!-- /<listado-tareas> -->

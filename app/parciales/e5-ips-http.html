@@ -1,0 +1,42 @@
+<div class="container" ng-controller="GeoCtrl as mc">
+            
+        <h1>Detectar IPs</h1>
+        <h4>Manejo de recursos online</h4>
+        <hr>
+        
+        <input type="button" ng-click="mc.mostrarGeo()"" value="Localizame" class="form-control">
+        
+        <ul ng-show="mostrar">
+            <li class="list-group-item">IP: {{mc.geo.geoplugin_request}}</li>
+            <li class="list-group-item">Ciudad: {{mc.geo.geoplugin_city}}</li>
+            <li class="list-group-item">Region: {{mc.geo.geoplugin_region}}</li>
+            <li class="list-group-item">Latitud: {{mc.geo.geoplugin_latitude}}</li>
+            <li class="list-group-item">Longitud {{mc.geo.geoplugin_longitude}}</li>
+            <li class="list-group-item">Moneda: {{mc.geo.geoplugin_currencySymbol}}</li>
+        </ul>
+
+        <div>
+            <code>
+                <pre>
+                    {{mc.geo | json}}
+                </pre>
+            </code>
+        </div>
+        
+
+        
+        <h3>Longitud</h3> 
+        
+
+        <iframe 
+            width="300" 
+            height="170" 
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0" 
+            src="https://maps.google.com/maps?q=43.0846,-2.1502&hl=es;z=14&amp;output=embed"
+        >
+        </iframe>
+
+</div><!-- fin del GeoCtrl -->

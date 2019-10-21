@@ -1,0 +1,24 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#!/">Angular JS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ejercicios Básicos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <span ng-repeat="rutaBasicos in rutasEjerciciosBasicos"><a class="dropdown-item" ng-class="(rutaBasicos.active)?'active':''" ng-href="{{rutaBasicos.url}}"><i class="{{rutaBasicos.icono}}"></i> {{rutaBasicos.nombre}}</a></span>
+ 
+                </div>
+            </li>
+            <li ng-click="cambiarActivo(ruta)" ng-repeat="ruta in rutas" class="nav-item" ng-class="(ruta.active)?'active':''">
+                <a class="nav-link" ng-href="{{ruta.url}}"><i class="{{ruta.icono}}"></i> {{ruta.nombre}}</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    

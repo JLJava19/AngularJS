@@ -1,0 +1,46 @@
+<div ng-controller="crudController">
+    <h2>{{ titulo | capitalizarCacho:1:9 }}</h2>
+    <br>
+   
+
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#Id</th>
+                        <th scope="col">Cancion</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="cancion in canciones">
+                        <th scope="row">{{cancion.id}}</th>
+                        <td>{{cancion.nombre}}</td>
+                        <td scope="col"><i class="fas fa-trash btn-cursor" ng-click="eliminarCancion(cancion.id)"></i>&nbsp;<i class="fas fa-edit btn-cursor" ng-click="modificarCancion(cancion.id, cancion.nombre)""></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <div class="row">
+                <input type="text" ng-model="nombre" placeholder="Nombre cancion">
+                <button class="btn btn-primary" ng-click="insertarCancion(nombre)" ng-disabled="(nombre.length>2)?false:true">Crear Canción</button>
+                <div>
+                    {{infoError}}
+                </div>
+            </div>
+            <div class="row">
+                <br>
+                <input type="text" ng-model="idModificar" placeholder="Id cancion" ng-disabled="true">
+                <input type="text" ng-model="nombreModificar" placeholder="Nombre cancion">
+                <button class="btn btn-primary" ng-click="modificarCancionRest(idModificar, nombreModificar)" ng-disabled="(nombreModificar.length>2)?false:true">Modificar Canción</button>
+                <div>
+                    {{infoError}}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>

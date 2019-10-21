@@ -1,0 +1,32 @@
+<h3>Lista de Pokemons</h3>
+<div>
+    <div>
+        <code>
+            <pre>
+                <!--{{pokemons | json}}-->
+            </pre>
+        </code> 
+    </div>
+    
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Sprite</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Tipos</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="pokemon in pokemons">
+                <th scope="row">{{pokemon.id}}</th>
+                <td> <img ng-src="{{ pokemon.sprites.front_default }}" alt=""></td>
+                <td><a ng-href="#!/detalle/{{pokemon.id}}">{{ pokemon.name | capitalizar}}</a></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

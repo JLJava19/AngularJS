@@ -1,0 +1,14 @@
+<h1>Evaluación</h1>
+    <h3>Angular 101</h3>
+    <hr>
+    Nombre completo
+    <input type="text" ng-model="nombre" class="form-control">
+    Lugar de trabajo:
+    <input type="text" ng-model="trabajo" class="form-control">
+    Salario en Euros
+    <input type="text" ng-model="salario" class="form-control">
+    <p>Usamos ng-model para vincular un input con una variable <code>ng-model="nombreVariable"</code></p>
+    <div>Nombre: {{ nombre | uppercase }}</div>
+    <div>Lugar de trabajo: {{ trabajo }} </div>
+    <div>Con un salario de: {{ salario | currency:"€" }}</div>
+    <br>

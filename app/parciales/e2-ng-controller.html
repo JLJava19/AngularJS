@@ -1,0 +1,106 @@
+<h1>profesor</h1>
+
+        <div ng-controller="ProfesorController as pc">
+            
+            <h4>Nombre del profesor {{ pc.profesorData.nombre }}</h4>
+            <br>
+
+            <div class="row">
+
+                <!-- Div que contiene la imagen del profesor -->
+                <div class="col-sm-3">
+                    <section class="panel">
+                        <div class="panel-body" align="center">
+                            <img ng-src="{{pc.profesorData.foto}}" class="img-circle" alt="" width="150px" height="150px">
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Div, donde se mostrará la bio del profesor -->
+                <div class="col-sm-9">
+                    <section class="panel">
+                        <div class="panel-body">
+                            {{ pc.profesorData.bio}}
+                            <br>
+                            <br>
+                            <strong>Edad:</strong> {{ pc.profesorData.edad }} años
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div><input type="button" ng-click="pc.editar()" class="btn btn-primary" value="Modificar"></div>
+            <div class="menu {{ pc.animacion }}" ng-show="pc.mostrarMenu">
+                <div class="row">
+                    Nombre: <input type="text" ng-model="pc.editando.nombre" class="form-control">
+                </div>
+                <div class="row">
+                    Edad: <input type="text" ng-model="pc.editando.edad" class="form-control">
+                </div>
+                <div class="row">
+                    Bio: <input type="text" ng-model="pc.editando.bio" class="form-control">
+                </div>
+                <div class="row">
+
+                    <input type="button" ng-click="pc.cancelar()" class="btn btn-danger" value="Cancelar">
+                    <input type="button" ng-click="pc.guardar()" class="btn btn-success" value="Guardar">
+                </div>
+            </div>
+        </div>
+        <!-- Div final ng-controller -->
+
+
+        <hr>
+        <h2>Ejemplo Youtube</h2>
+        <div ng-controller="YoutubeController as yt">
+            
+            <h4>Video de youtube </h4>
+            <br>
+
+            <div class="row">
+
+
+                <a href="https://www.youtube.com/watch?v={{ yt.videoData.codigo }}" targer="_blanck">
+                    <img class="float-left mr-3"
+                        ng-src="https://img.youtube.com/vi/{{ yt.videoData.codigo }}/default.jpg"
+                        alt="Imagen destacada del video {{ yt.videoData.nombre }}" />
+
+                    <p class="h3">Título: {{ yt.videoData.nombre }}</p>
+                </a>
+                <p class="h3"><i
+                        class="far fa-thumbs-up {{yt.animacionYoutube}}" ng-click="yt.sumarLike()"></i>Likes: {{ yt.videoData.likes }}</p>
+                <p class="h3">User: {{ yt.videoData.usuario.nombre }}</p>
+                <p class="h3">{{ yt.videoData.descripcion }}</p>
+
+            </div>
+        </div>
+        <!-- Div final ng-controller -->
+
+        <hr>
+    
+
+        <section>
+
+            <h2>Ejemplo directiva ng-repeat</h2>
+            <p><code>$event</code> Object<p></p>
+            <p>You can pass the <code>$event</code> object as an argument when calling the function.</p>
+            <p>The $event object contains the browser's event object:</p>
+
+            <div class = "row" ng-controller="FrutasController as fr">
+                {{fr.frutasJson}}
+                <br>
+                {{fr.frutas}}
+                <br>
+                <ul class="list-group">
+                    <li class="list-group-item {{ seleccionado }}" ng-repeat="fruta in fr.frutasJson.fruta" ng-click="fr.activar(fruta, $event)">{{fruta.nombre}}</li>
+                </ul>
+                
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="fj in fr.frutasJson.fruta">{{fj.nombre}} - {{fj.color}}</li>
+                </ul>
+               
+            </div>
+            <!-- Div final ng-controller -->
+
+
+
+        </section>

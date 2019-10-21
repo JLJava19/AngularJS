@@ -1,0 +1,38 @@
+<h1>Ejercicio componentes</h1>
+    <main class="container">
+        <a href="https://docs.angularjs.org/tutorial/step_03" targer="_blank">Tutorial oficial - componentes</a>
+        <br>
+        <a href="https://docs.angularjs.org/guide/component" targer="_blank">Documentacion oficial - componentes</a>
+        
+        <section>
+            <p>nuestro primer componente</p>
+            <saludo-usuario ></saludo-usuario>
+        </section>
+
+        <section>
+            <p>nuestro segundo componente con template para el HTML</p>
+            <componente-boton></componente-boton>
+        </section> 
+        
+        <section>
+            <p>nuestro tercer componente con template para el HTML</p>
+            <componente-calificacion pmateria="HTML" pnota=5></componente-calificacion>
+        </section>
+        
+        <section>
+            <p>nuestro cuarto componente - Calificaciones de Pepe</p>
+            <componente-calificacion pmateria="HTML" pnota=5></componente-calificacion>
+            <componente-calificacion pmateria="CSS" pnota=6></componente-calificacion>
+            <componente-calificacion pmateria="JS" pnota=8></componente-calificacion>
+            <componente-calificacion pmateria="AngularJS" pnota=2></componente-calificacion>
+        </section>
+
+        <section>
+            <!-- Use a custom component to render a list of phones -->
+            <phone-list></phone-list>  <!-- This tells AngularJS to instantiate a `phoneList` component here. -->
+        </section>
+
+
+
+
+    </main>
