@@ -10,20 +10,20 @@ angular.
         {
           "nombre": "Inicio",
           "url": "#!/",
-          "active": false,
-          "icono": "fas fa-home"
+          "active": true,
+          "icono": "fas fa-school"
         },
         {
           "nombre": "Frutas",
           "url": "#!/frutas",
-          "active": true,
+          "active": false,
           "icono": "fas fa-carrot"
         },
         {
           "nombre": "Componentes",
           "url": "#!/componente1",
           "active": false,
-          "icono": "fas fa-window-restore"
+          "icono": "fas fa-plug"
         },       
         {
           "nombre": "Prg. Funcional",
@@ -65,7 +65,7 @@ angular.
           "nombre": "Creditos",
           "url": "#!/creditos",
           "active": false,
-          "icono": "fab fa-creative-commons"
+          "icono": "fas fa-poo"
         }
         
       ];
