@@ -49,4 +49,11 @@ Arrancar el servicio web Musiconcloud
 # JSON-SERVER
 [Enlace json-server GitHub](https://github.com/typicode/json-server)
 
+- **Start JSON Server**
+
+    - json-server --watch db.json
+    - Now if you go to http://localhost:3000/posts/1, you'll get
+
+        *{ "id": 1, "title": "json-server", "author": "typicode" }*
+
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/json-server.png)
