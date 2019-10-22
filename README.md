@@ -1,10 +1,27 @@
 ## AngularJS - Ejercicios curso ipartek lanbide
+
+![Image of Ipartek](https://formacion.ipartek.com/images/logos/logo-ipartek.png)
+![Image of Lanbide](https://www.lanbide.euskadi.eus/images/y94-logo-lanbide.png)
+
+
+# JSON-SERVER
+[Enlace json-server GitHub](https://github.com/typicode/json-server)
+
+- **Arrancar JSON Server**, es obligatorio para ver algunos ejemplos
+
+    - json-server --watch db.json
+    - Si vas a http://localhost:3000/posts/1, obtendrá
+
+        *{ "id": 1, "title": "json-server", "author": "typicode" }*
+
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/json-server.png)
+
 # Ejercicios Básicos
-![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/EjerciciosBasicos.png)
+![Image of Ejercicios Basicos](https://github.com/JLJava19/AngularJS/blob/master/images/EjerciciosBasicos.png)
 - E1.1: Ejemplo de ng-model con inputs, pipes.
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/Inicio.png)
 - E1.2: Ejemplo de filtros con (uppercase, lowercase, currency, date), mas ejemplos de inputs.
-![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/filtros.png)
+![Image of Filtros](https://github.com/JLJava19/AngularJS/blob/master/images/filtros.png)
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/ng-model.png)
 - E2: Ejemplo de ng.controller.
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/ng-model0.png)
@@ -48,14 +65,3 @@
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/pokemos.png)
 - Créditos:
 
-# JSON-SERVER
-[Enlace json-server GitHub](https://github.com/typicode/json-server)
-
-- **Arrancar JSON Server**
-
-    - json-server --watch db.json
-    - Si vas a http://localhost:3000/posts/1, obtendrá
-
-        *{ "id": 1, "title": "json-server", "author": "typicode" }*
-
-![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/json-server.png)
