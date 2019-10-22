@@ -34,25 +34,27 @@
 - Servicios:
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/Servicios.png)
 - CRUD:
-Arrancar el servicio web Musiconcloud
+    - Arrancar el servicio web Musiconcloud.
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/Musiconcloud.png)
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/Musiconcloud2.png)
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/Musiconcloud3.png)
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/crud-java.png)
+    - Base de datos donde se pueden ver los registros.
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/mysql.png)
 - Formulario: 
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/formulario.png)
-- Pokemos:
+- Pokemons:
+    - Ejemplo de promesas.
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/pokemos.png)
 - Créditos:
 
 # JSON-SERVER
 [Enlace json-server GitHub](https://github.com/typicode/json-server)
 
-- **Start JSON Server**
+- **Arrancar JSON Server**
 
     - json-server --watch db.json
-    - Now if you go to http://localhost:3000/posts/1, you'll get
+    - Si vas a http://localhost:3000/posts/1, obtendrá
 
         *{ "id": 1, "title": "json-server", "author": "typicode" }*
 
