@@ -34,7 +34,12 @@
 - Servicios:
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/Servicios.png)
 - CRUD:
-![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/lista-tareas.png)
+Arrancar el servicio web Musiconcloud
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/Musiconcloud.png)
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/Musiconcloud2.png)
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/Musiconcloud3.png)
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/crud-java.png)
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/mysql.png)
 - Formulario: 
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/formulario.png)
 - Pokemos:
