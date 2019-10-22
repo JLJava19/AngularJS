@@ -1,4 +1,4 @@
-## AngularJSexercises
+## AngularJS - Ejercicios curso ipartek lanbide
 # Ejercicios Básicos
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/EjerciciosBasicos.png)
 - E1.1: Ejemplo de ng-model con inputs, pipes.
@@ -21,13 +21,25 @@
 
 # Ejercicios Básicos 2
 - Inicio: 
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/Inicio.png)
 - Frutas:
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/frutas.png)
 - Componentes:
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/componente.png)
 - Prg. Funcional:
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/prog-funcional1.png)
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/prog-funcional2.png)
 - Promesas: 
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/promesas.png)
 - Servicios:
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/Servicios.png)
 - CRUD:
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/lista-tareas.png)
 - Formulario: 
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/formulario.png)
 - Pokemos:
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/pokemos.png)
 - Créditos:
 
+# JSON-SERVER
+![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/json-server.png)
