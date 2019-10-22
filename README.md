@@ -64,4 +64,5 @@
     - Ejemplo de promesas.
 ![Image of JLJava19](https://github.com/JLJava19/AngularJS/blob/master/images/pokemos.png)
 - Créditos:
+    - Lorem ipsum
 
