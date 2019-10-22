@@ -83,3 +83,98 @@
         <!-- /accordion-->
 
 </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3>Filers, Map and Reduce</h3>
+<a href="https://medium.com/@js_tut/map-filter-and-reduce-animated-7fe391a35a47">Filer, Map, Reduce</a>
+<br>
+
+<div class="row">
+    <div>
+        <h4>Array.filter – keep all that match a condition.</h4>
+    </div>
+    <div>
+        <img class="img-gif" src="img/filter.gif" alt="Javascript filter">
+    </div>
+    
+    <div>
+        <br>
+        <div>Ejemplo</div>
+        <code>
+            var words ['verde', 'marron', 'rojo'];
+            const result = words.filter( word => word.length>4 ))
+        </code>
+
+        <br>
+        <cite>
+        NOTE: there is a small mistake in the animation. It should return [6,7], not [6,7,8]. I’ll fix it shortly. . .
+        </cite>
+
+        <ul>
+            <li>function value > 5 is applied to every item in the original array.</li>
+            <li>.filter() returns a modified copy of the array – the original is still available!</li>
+            <li>Result: [6,7,8] (only values that passed the condition.)</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<br>
+
+<div class="row">
+    <div>
+        <h4>Array.map – map all values to an expression.</h4>
+    </div>
+    <div>
+        <img class="img-gif" src="img/map.gif" alt="Javascript map">
+    </div>
+    
+    <div>
+        <br>
+        <div>Ejemplo</div>
+        <code>
+            
+        </code>
+
+        <ul>
+            <li>Expression value + 1 is applied to every item in the original array.</li>
+            <li>.map() returns a modified copy of the array leaving original untouched.</li>
+            <li>Result: [2,3,4,5,6,7,8] (a copy of the original array is created.)</li>
+        </ul>
+
+    </div>
+
+</div>
+    
+<br>
+
+<div class="row">
+    <div>
+        <h4>Array.reduce – reduce all items to a single value.</h4>
+    </div>
+    <div>
+        <img class="img-gif" src="img/reduce.gif" alt="Javascript reduce">
+    </div>
+    
+    <div>
+        <br>
+        <div>Ejemplo</div>
+        <code>
+            
+        </code>
+
+        <ul>
+            <li>Reducer function F takes value and accumulator.</li>
+            <li>In this example .reduce(v, a) returns the sum of all values.</li>
+            <li>Result: 28 (the sum of all numbers in the original array)</li>
+        </ul>
+
+    </div>
+
+</div>

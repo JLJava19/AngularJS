@@ -1,11 +1,13 @@
+
 <footer>
   <div class="copyright">
-    <p>&copy 2013 - Organisation</p>
+    <p>&copy 2019 - Ipartek Formación - {{constantes.titulo}} v. {{constantes.version}} {{constantes.autor}}</p>
+    <p></p>
   </div>
   <div class="social">
-    <a href="#" class="support">Contact Us</a>
-    <a href="#" class="face">f</a>
-    <a href="#" class="tweet">t</a>
-    <a href="#" class="linked">in</a>
+    <a ng-href="mailto:{{constantes.email}}" class="support">Contacto</a>
+    <a href="#" class="face"><i class="fab fa-twitch"></i></a>
+    <a href="#" class="tweet"><i class="fab fa-twitter-square"></i></a>
+    <a ng-href="{{constantes.github}}" target="_blank" class="linked"><i class="fab fa-github-alt"></i></a>
   </div>
 </footer>

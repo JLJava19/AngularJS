@@ -9,7 +9,8 @@ var app = angular.module('angularApp',['ngRoute','ngSanitize']);
                                           "titulo": "Angular Js",
                                           "version": "1.0",
                                           "autor": "Jose Luis del Hierro",
-                                          "github": "https://github.com/JLJava19/"
+                                          "email": "jlhm2077@gmail.com",
+                                          "github": "https://github.com/JLJava19/AngularJS"
 
                                         });
 
